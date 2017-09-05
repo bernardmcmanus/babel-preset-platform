@@ -1,0 +1,50 @@
+{
+  "name": "babel-preset-platform",
+  "version": "1.0.0-alpha",
+  "main": "dist",
+  "description": "Set platform-specific options in babel configs",
+  "homepage": "https://github.com/bernardmcmanus/babel-preset-platform",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Bernard McManus",
+    "email": "bernard.mcmanus.iv@gmail.com",
+    "url": "https://github.com/bernardmcmanus"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "preset",
+    "dynamic",
+    "optimization"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bernardmcmanus/babel-preset-platform.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "babel src --copy-files --out-dir dist --source-maps inline",
+    "clean": "rimraf dist",
+    "lint": "eslint . --ignore-path .gitignore",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint",
+    "test": "echo 'FIXME add tests'; exit 0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-plugin-import": "^2.7.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "core-js": "^2.5.1",
+    "lodash.mergewith": "^4.6.0",
+    "lodash.once": "^4.1.1"
+  }
+}

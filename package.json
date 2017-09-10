@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-platform",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.1",
   "main": "dist",
   "description": "Set platform-specific options in babel configs",
   "homepage": "https://github.com/bernardmcmanus/babel-preset-platform",

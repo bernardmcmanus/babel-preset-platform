@@ -4,7 +4,7 @@
 			targets: {
 				node: 4
 			},
-			useBuiltins: true
+			useBuiltIns: 'usage'
 		}]
 	],
 	plugins: [

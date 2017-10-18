@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-platform",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "main": "dist",
   "description": "Set platform-specific options in babel configs",
   "homepage": "https://github.com/bernardmcmanus/babel-preset-platform",
@@ -32,19 +32,19 @@
     "pretest": "npm run lint",
     "test": "echo 'FIXME add tests'; exit 0"
   },
+  "dependencies": {
+    "babel-polyfill": "^7.0.0-beta.3",
+    "colors": "^1.1.2",
+    "lodash.mergewith": "^4.6.0",
+    "lodash.once": "^4.1.1"
+  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-cli": "^7.0.0-beta.3",
     "babel-eslint": "^7.2.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-plugin-transform-object-rest-spread": "^7.0.0-beta.3",
+    "babel-preset-env": "^7.0.0-beta.3",
     "eslint": "^4.6.1",
     "eslint-plugin-import": "^2.7.0",
     "rimraf": "^2.6.1"
-  },
-  "dependencies": {
-    "colors": "^1.1.2",
-    "core-js": "^2.5.1",
-    "lodash.mergewith": "^4.6.0",
-    "lodash.once": "^4.1.1"
   }
 }

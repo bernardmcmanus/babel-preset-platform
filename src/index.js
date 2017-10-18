@@ -1,5 +1,3 @@
-import 'core-js/es7/object';
-
 import once from 'lodash.once';
 import merge from 'lodash.mergewith';
 import { bgYellow } from 'colors/safe';
@@ -48,7 +46,7 @@ module.exports = (context, config = {}) => {
 						} else if (options) {
 							merge(store[name], options, (current, next) => (
 								(Array.isArray(current) || Array.isArray(next))
-									? unique([].concat(current, next))
+									? unique([].concat(current, next)).filter(Boolean)
 									: undefined
 							));
 						}
